@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.DealItemFragment">
+
+    <ImageView
+        android:id="@+id/deal_image"
+        android:layout_width="@dimen/width_deal_image"
+        app:layout_constraintBottom_toTopOf="@+id/deal_price"
+        android:layout_height="@dimen/height_deal_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deal_price"
+        android:layout_width="@dimen/width_deal_title"
+        android:layout_height="wrap_content"
+        tools:text="@string/app_name"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/deal_title"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/text_size_30sp" />
+
+    <TextView
+        android:id="@+id/deal_offer_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/app_name"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        app:layout_constraintBottom_toTopOf="@+id/deal_title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <TextView
+        android:id="@+id/deal_title"
+        android:layout_width="@dimen/width_deal_title"
+        android:layout_height="wrap_content"
+        tools:text="@string/app_name"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/deal_description"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <TextView
+        android:id="@+id/deal_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/width_deal_description"
+        tools:text="@string/app_name"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_list"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18sp" />
+
+    <Button
+        android:id="@+id/add_to_list"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_cart"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:background="@android:color/darker_gray"
+        android:includeFontPadding="false"
+        android:text="add to list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_to_cart"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_cart"
+        android:background="@android:color/holo_red_light"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18sp"
+        android:text="add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_to_list" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="@dimen/width_progress_bar"
+        android:layout_height="@dimen/height_progress_bar"
+        android:progressDrawable="@drawable/ic_circle"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

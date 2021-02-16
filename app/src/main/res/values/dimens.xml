@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_deal_list_item">140dp</dimen>
+    <dimen name="deal_list_item_image_size">100dp</dimen>
+    <dimen name="width_progress_bar">40dp</dimen>
+    <dimen name="height_progress_bar">40dp</dimen>
+    <dimen name="margin_top_deal_image">10dp</dimen>
+    <dimen name="margin_bottom_deal_image">10dp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="width_aisle">40dp</dimen>
+    <dimen name="height_aisle">40dp</dimen>
+    <dimen name="margin_start_deal_list">15dp</dimen>
+    <dimen name="margin_end_deal_list">10dp</dimen>
+    <dimen name="margin_end_ship">5dp</dimen>
+    <dimen name="height_cart">60dp</dimen>
+    <dimen name="width_deal_image">200dp</dimen>
+    <dimen name="height_deal_image">400dp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+    <dimen name="width_deal_title">250dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="width_deal_description">100dp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+</resources>
